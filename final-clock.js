@@ -57,20 +57,6 @@ function draw() {
     background(51);
   
   calcTime();
-
-    for (var i = 0; i < instructions.length; i++) {
-        var v = instructions[i];
-        v.behaviors();
-        v.update();
-        v.show();
-    }
-
-    for (var z = 0; z < vehicles.length; z++) {
-        var v = vehicles[z];
-        v.behaviors();
-        v.update();
-        v.show();
-    }
 }
 
 function calcTime() {
