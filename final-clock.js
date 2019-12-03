@@ -63,13 +63,5 @@ function calcTime() {
   var hours = hour();
   var minutes = minute();
   var seconds = second();
-  
-  if(seconds != prevSec) {
-    prevSec = seconds;
-    hours = nf(hours, 2, 0);
-    minutes = nf(minutes, 2, 0);
-    seconds = nf(seconds, 2, 0);
-    updateText(hours + ":" + minutes + ":" + seconds);
-  }
 }
 
